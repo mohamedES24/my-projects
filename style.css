@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #263238;
+}
+body{
+    width: 1920px;
+    height: 1080px;
+    background: #f0f0f0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header ul{
+    margin-left: 393px;
+    margin-top: 57px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    
+}
+header ul li{
+    margin-right: 39px;
+    justify-content: center;
+    align-items: center;
+}
+header ul li a{
+    font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 32px;
+}
+.header-buttons{
+    margin-right: 198px;
+    margin-top: 50px;
+}
+.login{
+    margin-right: 55px;
+}
+
