@@ -54,10 +54,17 @@ header > div {
   font-size: 18px;
   line-height: 1;
   padding: 12px 20px;
+  display: inline-block;
   border-radius: 7px;
 }
 
 .btn.primary {
   color: #ffffff;
   background: #1666ff;
+}
+
+.main-slider {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */
