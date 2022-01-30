@@ -1,0 +1,24 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    .header-logo {
+            width: 138px;
+        }
+    ul {
+        display: flex;
+        li {
+            display: block;
+            a {
+                display: block;
+                padding: 20px;
+                color: #263238;
+            }
+        }
+    }
+    > div {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+    }
+}
