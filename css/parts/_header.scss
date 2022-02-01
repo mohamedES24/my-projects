@@ -1,13 +1,12 @@
 header {
     display: flex;
     justify-content: space-between;
+    margin-top: 25px !important;
     .header-logo {
             width: 138px;
-            margin-top: 38px;
         }
     ul {
         display: flex;
-        margin-top: 57px;
         li {
             display: block;
             a {
@@ -23,8 +22,4 @@ header {
         gap: 20px;
         align-items: center;
     }
-    .btn{
-        margin-top: 50px;
-    }
-    
 }

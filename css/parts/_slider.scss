@@ -2,7 +2,22 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    
+    .content {
+        height: 80%;
+        display: grid;
+        align-items: center;
+    }
+    p {
+        max-width: 520px;
+    }
+    a {
+        p {
+            text-transform: capitalize;
+            font-size: 22px;
+            line-height: 32px;
+            color: #6A6A6A;
+        }
+    }
 }
 
 

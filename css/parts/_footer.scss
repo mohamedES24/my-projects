@@ -1,0 +1,31 @@
+footer {
+    padding: 50px 30px;
+    background: #eee;
+    margin-top: 50px;
+    .flex-footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+        > div {
+            text-align: center;
+            display: grid;
+            gap: 20px;
+            align-items: flex-end;
+            align-content:flex-end;
+            justify-content: center;
+            div {
+                display: flex;
+                gap: 20px;
+            }
+        }
+    }
+    li {
+        list-style: none;
+        padding-bottom: 10px;
+        a {
+            font-weight: 400;
+            font-size: unset;
+            color: #000;
+
+        }
+    }
+}

@@ -1,5 +1,5 @@
 .container {
-  max-width: 1364px;
+  max-width: 1550px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -11,7 +11,42 @@
   display: inline-block;
   border-radius: 7px;
 }
+.btn-rounded {
+  border-radius: 50px;
+  padding: 5px;
+  line-height: 1;
+  padding: 3px;
+  font-size: 22px;
+  width: 30px;
+  text-align: center;
+  height: 30px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn.large { 
+  padding: 19px 38px;
+}
+.btn-rounded.primary ,
 .btn.primary {
   color: #ffffff;
   background: #1666ff;
+  border:solid 2px #1666ff;
+}
+.btn.outline-primary {
+  color: #1666ff;
+  border:solid 2px #1666ff;
+}
+h1 {
+  font-size: 64px;
+  line-height: 100px;
+  letter-spacing: 0.01em;
+  color: #263238;
+}
+
+.more-btn {
+  padding: 10px 0;
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
