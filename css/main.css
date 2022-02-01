@@ -24,9 +24,11 @@ header {
 }
 header .header-logo {
   width: 138px;
+  margin-top: 38px;
 }
 header ul {
   display: flex;
+  margin-top: 57px;
 }
 header ul li {
   display: block;
@@ -41,6 +43,9 @@ header > div {
   justify-content: center;
   gap: 20px;
   align-items: center;
+}
+header .btn {
+  margin-top: 50px;
 }
 
 .container {
