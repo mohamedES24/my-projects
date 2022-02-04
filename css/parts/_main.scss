@@ -9,6 +9,7 @@
   line-height: 1;
   padding: 12px 20px;
   display: inline-block;
+  cursor: pointer;
   border-radius: 7px;
 }
 .btn-rounded {
@@ -32,10 +33,18 @@
   color: #ffffff;
   background: #1666ff;
   border:solid 2px #1666ff;
+  &:hover {
+    color: #1666ff;
+    background: transparent;
+    border:solid 2px #1666ff;
+  }
 }
 .btn.outline-primary {
   color: #1666ff;
   border:solid 2px #1666ff;
+  &:hover {
+    border:solid 2px transparent;
+  }
 }
 h1 {
   font-size: 64px;
@@ -44,9 +53,62 @@ h1 {
   color: #263238;
 }
 
+.lrg {
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 100px;
+  letter-spacing: 0.01em;
+  color: #263238;
+}
 .more-btn {
   padding: 10px 0;
   display: flex;
   gap: 20px;
   align-items: center;
 }
+.form {
+  padding: 62px 77px;
+  background: #F1F1F1;
+  border-radius: 17px;
+}
+label {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+  color: #658493;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+textarea{
+  background: #FFFFFF;
+  margin-top: 8px;
+  margin-bottom: 30px;
+  border: 1px solid #536B79;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 5px;
+  min-height: 56px;
+  display: block;
+  padding: 0 20px;
+}
+.form-submit {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+
+::placeholder ,
+:-ms-input-placeholder ,
+::-ms-input-placeholder {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #C9CACD;
+}
+.hide { display: none; opacity: 0; }
+.left {text-align: left;}
+.right {text-align: right;}
+.center {text-align: center;}
