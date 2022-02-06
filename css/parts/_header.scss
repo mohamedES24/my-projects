@@ -8,6 +8,7 @@ header {
     ul {
         display: flex;
         li {
+            position: relative;
             display: block;
             a {
                 display: block;
@@ -22,4 +23,37 @@ header {
         gap: 20px;
         align-items: center;
     }
+}
+li:hover > .hover-list  {
+    display: block !important;
+}
+.hover-list {
+    display: none !important;
+    li {
+        a {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 17px;
+            line-height: 28px;
+            letter-spacing: 0.01em;
+            color: #455A64;
+            padding: 17px 20px;
+        }
+        &::after {
+            content: '';
+            width: 080%;
+            margin: 0 auto;
+            height: 1px;
+            background: #D6D6D6;
+            display: block;
+        }
+    }
+    position: absolute;
+    display: grid;
+    z-index: 2;
+    background: #fff;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 6px;
+
 }
