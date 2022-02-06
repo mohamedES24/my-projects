@@ -41,6 +41,14 @@
   }
 }
 
+.small-svg {
+  max-width: 700px;
+  margin:  0 auto;
+  width: 100%;
+  svg {
+    width: 100%;
+  }
+}
 .btn-rounded.success ,
 .btn.success {
   color: #ffffff;
@@ -52,11 +60,26 @@
     border:solid 2px #11CE78;
   }
 }
+.text-success {
+  color: #11CE78;
+
+}
 .btn.outline-primary {
   color: #1666ff;
   border:solid 2px #1666ff;
   &:hover {
     border:solid 2px transparent;
+  }
+}
+li.user {
+  display: block;
+  i {
+    margin: 0 10px;
+    font-size: 20px;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #E6ECFF;
+    color: #4294FF;
   }
 }
 h1 {
