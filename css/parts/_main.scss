@@ -8,6 +8,7 @@
   font-size: 18px;
   line-height: 1;
   padding: 12px 20px;
+  min-height: 54px;
   display: inline-block;
   cursor: pointer;
   border-radius: 7px;
@@ -69,7 +70,28 @@ h5 {
   line-height: 32px;
   color: #455A64;
 }
-
+.small,
+h6 {
+  font-style: normal;
+font-weight: normal;
+  font-size: 17px;
+  line-height: 38px;
+  letter-spacing: 0.01em;
+  color: #263238;
+}
+hr {
+  border: unset;
+  height:  1px;
+  display: block;
+  background-color:  #C4C4C4;
+}
+hr.large { 
+  margin:45px 5px ;
+}
+address {
+    font-style: normal;
+    display: inline;
+}
 .lrg {
   font-weight: bold;
   font-size: 64px;
@@ -138,6 +160,7 @@ textarea{
   display: block;
   padding: 0 20px;
 }
+textarea{ padding-top: 10px;}
 .form-submit {
   display: grid;
   gap: 20px;
@@ -168,6 +191,7 @@ textarea{
 .f2 { grid-template-columns: 1fr 1fr ; }
 .block {
   display: block !important;
+  width: 100%;
 }
 
 .slider-container {
