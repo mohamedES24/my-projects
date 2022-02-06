@@ -127,3 +127,11 @@ textarea{
 .g { display: grid; }
 .a-center {align-items: center;}
 .f2 { grid-template-columns: 1fr 1fr ; }
+
+
+.slider-container {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  justify-items: center;
+  align-items: center;
+}
