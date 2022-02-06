@@ -47,10 +47,15 @@
   }
 }
 h1 {
-  font-size: 64px;
-  line-height: 100px;
+  font-size: calc(25px + 2vw);
   letter-spacing: 0.01em;
   color: #263238;
+}
+h5 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  color: #455A64;
 }
 
 .lrg {
@@ -112,3 +117,13 @@ textarea{
 .left {text-align: left;}
 .right {text-align: right;}
 .center {text-align: center;}
+.fa-times {cursor: pointer; transition: 0.4s;}
+.rotate{
+  i {
+    transform: rotate(45deg);
+  }
+}
+
+.g { display: grid; }
+.a-center {align-items: center;}
+.f2 { grid-template-columns: 1fr 1fr ; }
