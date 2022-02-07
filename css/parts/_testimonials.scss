@@ -1,4 +1,6 @@
 .testimonials {
+       
+    
 
     width: 100%;min-height: 50vh;display: grid;align-items: center;
 
@@ -58,4 +60,30 @@
         &::before { content: '“'; top: 0px; }
     }
 }
+}
+.top-paragraph{
+    text-align: center;
+    padding-top: 302px;
+    h3{
+      
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 60px;
+        line-height: 82px;
+        letter-spacing: 0.01em;
+        color: #121212;
+    }
+    p{
+     
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 32px;
+        color: #455A64;
+    }
+
+
+    
 }
