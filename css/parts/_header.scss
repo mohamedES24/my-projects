@@ -2,9 +2,7 @@ header {
     display: flex;
     justify-content: space-between;
     margin-top: 25px !important;
-    .header-logo {
-            width: 138px;
-        }
+    max-width: 120px;
     ul {
         display: flex;
         li {
@@ -55,5 +53,5 @@ li:hover > .hover-list  {
     border: 1px solid #E0E0E0;
     box-sizing: border-box;
     border-radius: 6px;
-
 }
+.logo { width: 138px; margin: 0 auto;}
