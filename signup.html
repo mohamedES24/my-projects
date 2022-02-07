@@ -13,27 +13,88 @@
     <header class="container">
         <div>
             <span class="logo">
-
             </span>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="/about-us.html">About us</a></li>
-                <li><a href="#">Services</a></li>  
+                <li>
+                    <a>Home</a>
+                    <ul class="hover-list">
+                        <li><a href="#">item one</a></li>
+                        <li><a href="#">item two</a></li>
+                        <li><a href="#">item three</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/about-us.html">About us</a>
+                    <ul class="hover-list">
+                        <li><a href="#">item one</a></li>
+                        <li><a href="#">item two</a></li>
+                        <li><a href="#">item three</a></li>
+                    </ul>                
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                    <ul class="hover-list">
+                        <li><a href="#">item one</a></li>
+                        <li><a href="#">item two</a></li>
+                        <li><a href="#">item three</a></li>
+                    </ul>                
+                </li>  
             </ul>
         </div>
-        <div>
-            <a href="/" class="btn">login</a>
-            <a href="/" class="btn primary">sign up</a>
-        </div>
+        <li class="user">
+            <i class="fas fa-user"></i> hello, Mary
+            <ul class="hover-list">
+                <li><a href="#">item one</a></li>
+                <li><a href="#">item two</a></li>
+                <li><a href="#">item three</a></li>
+            </ul> 
+        </li>
     </header>
-    <section class="container">
-        <div class="g f2 a-center p-5">
-            <div class="profile-text">
-                <h1 class="px-3"> upgrade to premium </h1>
-                <a href="#" class="btn success block center">updrade</a>
+    <section class="container signup">
+        <div class="g f2 a-center px-5">
+            <div><img src="/images/svg/signup.svg" alt="">
+            <h5>
+                Registering to this website, you accept our <a href="#" class="black"><b>Terms</b></a> of use and our <a href="#" class="black"><b>Privacy policy</b></a>
+            </h5>
             </div>
-            <div id="profile">
-
+            <div class="center">
+                <div class="logo"></div>
+                <form  action="#">
+                    <div class="form">
+                        <div class="form50">
+                            <label>First Name
+                                <input type="text" required="required"  placeholder="Enter your first name" />
+                            </label>
+                            <label>Last Name
+                                <input type="text" required="required"  placeholder="Last your first name" />
+                            </label>
+                        </div>
+                        <label>E-mail
+                            <input type="email" required="required"  placeholder="Enter your Email address" />
+                        </label>
+                        <div class="form50">
+                            <label>Mobile number
+                                <input type="text" required="required"  placeholder="Enter your Mobile number" />
+                            </label>
+                            <label>Country
+                                <input type="text" required="required"  placeholder="Enter your Country Name" />
+                            </label>
+                        </div>
+                        <label>Password
+                            <input type="password" required="required"  placeholder="**********" />
+                        </label>
+                        <label>Confirm password
+                            <input type="password" required="required"  placeholder="**********" />
+                        </label>
+                        <div class="form-submit">
+                            <input type="submit" class="btn primary"  value="Sign Up">
+                            <div>
+                                <a href="\" class="black">Login</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <br>
             </div>
         </div>
     </section>

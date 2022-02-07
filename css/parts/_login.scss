@@ -1,0 +1,15 @@
+.login {
+    form {
+        text-align: start;
+        .form-submit {
+            display: grid;
+            grid-template-columns: 1fr;
+            >div {
+                display: flex;
+                justify-content: space-between;
+                gap: 20px;
+                align-items: center;
+            }
+        }
+    }
+}
