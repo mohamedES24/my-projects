@@ -3,3 +3,14 @@
         gap: 10% !important;
     }
 }
+.top-cv {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+        font-size: 36px;
+        letter-spacing: 0.01em;
+        color: #121212;
+    }
+}

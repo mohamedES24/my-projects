@@ -60,3 +60,17 @@ document.querySelectorAll('[toggle-faq]').forEach(element => {
         selector.classList.toggle("show");
     })
 })
+
+if (document.querySelector('.profile--container')) {
+    let container = document.querySelector('.profile--container')
+    let btns = container.querySelectorAll('.sidebar li')
+    let contents = container.querySelectorAll('.content div')
+    btns.forEach( (a)=>{
+        a.addEventListener('click', (t) => {
+            contents.forEach( (e)=>{
+                e.style.display = "none"
+            })
+            document.querySelector(`.content #${a.getAttribute('value')}`).style.display = "block"
+        })
+    })
+}

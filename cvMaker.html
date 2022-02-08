@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/2000/svg">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="container">
+        <div>
+            <span class="logo">
+
+            </span>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="/about-us.html">About us</a></li>
+                <li><a href="#">Services</a></li>  
+            </ul>
+        </div>
+        <div>
+            <a href="/" class="btn">login</a>
+            <a href="/" class="btn primary">sign up</a>
+        </div>
+    </header>
+    <section class="container top-cv">
+        <h2>Make My CV</h2>
+        <div>
+            <a href="#" class="btn success" > Upgrade to Premium </a>
+            <a href="#" class="btn outline-primary"> Save </a>
+            <a href="#" class="btn outline-primary"> Preview </a>
+        </div>
+    </section>
+    <section class="container">
+        <div class="profile--container">
+            <div class="sidebar">
+                <ul>
+                    <li value="Basic">Basic information</li>
+                    <li value="Work">Work experience</li>
+                    <li value="Qualifications">Qualifications</li>
+                    <li value="Education">Education</li>
+                    <li value="References">References</li>
+                    <li value="Interests">Interests</li>
+                </ul>
+                <div class="sidebar--footer">
+                    <a href="#">+ new section </a>
+                    <p class="small"> * Click and drag section names in the above list to reorder sections in your CV. </p>
+                    <p class="small"> * If you leave the fields in a section empty, the section will not appear in your CV </p>
+                </div>
+            </div>
+            <div class="content">
+
+                <div id="Basic" >Basic</div>
+                <div id="Work" style='display:none'>Work</div>
+                <div id="Qualifications" style='display:none'>Qualifications</div>
+                <div id="Education" style='display:none'>Education</div>
+                <div id="References" style='display:none'>References</div>
+                <div id="Interests" style='display:none'>Interests</div>
+
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <textarea name="text_editor"></textarea>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="flex-footer">
+                <ul>
+                    <li>Discover</li>
+                    <li>
+                        <a href=""> home </a>
+                    </li>
+                    <li>
+                        <a href=""> Testimonials </a>
+                    </li>
+                    <li>
+                        <a href=""> New users FAQ </a>
+                    </li>
+                    <li>
+                        <a href=""> blog </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>Services</li>
+                    <li>
+                        <a href=""> CV Maker </a>
+                    </li>
+                    <li>
+                        <a href=""> CV Review </a>
+                    </li>
+                    <li>
+                        <a href=""> Linkedin Profile </a>
+                    </li>
+                    <li>
+                        <a href=""> Coaching </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>Company </li>
+                    <li>
+                        <a href=""> About us </a>
+                    </li>
+                    <li>
+                        <a href=""> Careers </a>
+                    </li>
+                    <li>
+                        <a href=""> Terms & conditions </a>
+                    </li>
+                    <li>
+                        <a href=""> Contact us </a>
+                    </li>
+                    <li>
+                        <a href=""> Privacy policy </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>Existing Members </li>
+                    <li>
+                        <a href=""> tracking your CV </a>
+                    </li>
+                    <li>
+                        <a href=""> Login </a>
+                    </li>
+                    <li>
+                        <a href=""> Support </a>
+                    </li>
+                </ul>
+                <div>
+                    <span class="lang">
+                        <a href="#">
+                            <i class="fas fa-globe"></i>
+                            <span>English</span>
+                        </a>
+                    </span>
+                    <div>
+                        <a href="#">
+                            <i class="btn-rounded large primary fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                            <i class="btn-rounded large primary fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#">
+                            <i class="btn-rounded large primary fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+</body>
+<script src="/js/main.js"></script>
+<script src="https://cdn.ckeditor.com/4.10.1/standard/ckeditor.js"></script>
+<script>
+    CKEDITOR.replace( 'text_editor' );
+</script>
+</html>
