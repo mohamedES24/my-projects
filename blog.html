@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/2000/svg">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/js/main.js">
+    <title>Document</title>
+</head>
+<body>
+    <header class="container">
+        <div>
+            <span class="logo">
+
+            </span>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="/about-us.html">About us</a></li>
+                <li><a href="#">Services</a></li>  
+            </ul>
+        </div>
+        <div>
+            <a href="/" class="btn">login</a>
+            <a href="/" class="btn primary">sign up</a>
+        </div>
+    </header>
+    <section class="container ">
+        <div class="blog">
+            <div class="card">
+                <img src="https://via.placeholder.com/350x350/B1C4CE78" >
+                <h4>WHY wolf of linkedin</h4>
+                <p>Lorem ipsum dolor sit amet, consejyetur adipiscing elit. Habitasse sem tellus pta nibh. Et, quis massa ma</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/350x350/B1C4CE78" >
+                <h4>WHY wolf of linkedin</h4>
+                <p>Lorem ipsum dolor sit amet, consejyetur adipiscing elit. Habitasse sem tellus pta nibh. Et, quis massa ma</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/350x350/B1C4CE78" >
+                <h4>WHY wolf of linkedin</h4>
+                <p>Lorem ipsum dolor sit amet, consejyetur adipiscing elit. Habitasse sem tellus pta nibh. Et, quis massa ma</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/350x350/B1C4CE78" >
+                <h4>WHY wolf of linkedin</h4>
+                <p>Lorem ipsum dolor sit amet, consejyetur adipiscing elit. Habitasse sem tellus pta nibh. Et, quis massa ma</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/350x350/B1C4CE78" >
+                <h4>WHY wolf of linkedin</h4>
+                <p>Lorem ipsum dolor sit amet, consejyetur adipiscing elit. Habitasse sem tellus pta nibh. Et, quis massa ma</p>
+            </div>
+        </div>
+
+    </section>
+  
+    <footer>
+        <div class="container">
+            <div class="flex-footer">
+                <ul>
+                    <li>Discover</li>
+                    <li>
+                        <a href=""> home </a>
+                    </li>
+                    <li>
+                        <a href=""> Testimonials </a>
+                    </li>
+                    <li>
+                        <a href=""> New users FAQ </a>
+                    </li>
+                    <li>
+                        <a href=""> blog </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>Services</li>
+                    <li>
+                        <a href=""> CV Maker </a>
+                    </li>
+                    <li>
+                        <a href=""> CV Review </a>
+                    </li>
+                    <li>
+                        <a href=""> Linkedin Profile </a>
+                    </li>
+                    <li>
+                        <a href=""> Coaching </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>Company </li>
+                    <li>
+                        <a href=""> About us </a>
+                    </li>
+                    <li>
+                        <a href=""> Careers </a>
+                    </li>
+                    <li>
+                        <a href=""> Terms & conditions </a>
+                    </li>
+                    <li>
+                        <a href=""> Contact us </a>
+                    </li>
+                    <li>
+                        <a href=""> Privacy policy </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>Existing Members </li>
+                    <li>
+                        <a href=""> tracking your CV </a>
+                    </li>
+                    <li>
+                        <a href=""> Login </a>
+                    </li>
+                    <li>
+                        <a href=""> Support </a>
+                    </li>
+                </ul>
+                <div>
+                    <span class="lang">
+                        <a href="#">
+                            <i class="fas fa-globe"></i>
+                            <span>English</span>
+                        </a>
+                    </span>
+                    <div>
+                        <a href="#">
+                            <i class="btn-rounded large primary fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                            <i class="btn-rounded large primary fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#">
+                            <i class="btn-rounded large primary fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+</body>
+<script>
+    let updateName = (a) => {
+        a.parentElement.querySelector('.span').innerHTML = a.files.item(0).name;
+        document.querySelector('#plus').classList.remove('false');
+        document.querySelector('#plus').classList.add('true');
+    }
+</script>
+<script>
+    let checkPDF = () => { 
+        document.querySelectorAll('input[required][type=file]').forEach( (a)=>{
+            if(a.value == null || a.value == undefined || a.value == ''  ) {
+                document.querySelector('#plus').classList.add('false');
+                document.querySelector('#plus').classList.remove('true');
+                a.parentElement.querySelector('.cv-select .span').innerHTML = 'you need to upload a file';
+            } else {
+                document.querySelector('#plus').classList.remove('false');
+                document.querySelector('#plus').classList.add('true');
+            }
+        })
+    }
+</script>
+<script src="/js/main.js"></script>
+</html>
