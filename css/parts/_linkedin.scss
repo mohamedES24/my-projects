@@ -1,4 +1,30 @@
-.linked-form {
-    max-width: 80% ;
-    margin: 0 auto;
+.profile-cv--list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    .card {
+        background: #F0F0F0;
+        display: grid;
+        grid-template-columns: 140px auto;
+        gap: 30px;
+        align-items: center;
+        padding: 35px 28px;
+        border-radius: 15px;
+        h4 {
+            font-weight: 600;
+            font-size: 38px;
+            letter-spacing: 0.01em;
+            color: #455A64;
+        }
+        img {
+            border-radius: 50%;
+            max-height: 140px;
+            max-width: 140px;
+        }
+        a {
+            font-size: 18px;
+            letter-spacing: 0.01em;
+            color: #658493;
+        }
+    }
 }
