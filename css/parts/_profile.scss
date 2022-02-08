@@ -1,3 +1,56 @@
 .profile-text{
     max-width: 490px;
 }
+
+.profile--container {
+    display: grid;
+    grid-template-columns: 250px auto;
+    > .sidebar  {
+        display: grid;
+        align-content:space-between ;
+        li:first-child { 
+            border-top: unset;
+            border-radius: 20px 0px 0px 0px;
+        }
+        li {
+            display: block;
+            cursor: pointer;
+            padding: 17px 0;
+            font-weight: normal;
+            font-size: 18px;
+            text-align: center;
+            border-top: 3px solid #B9CAD2;;
+            color: #B1C4CE;
+            transition: 0.5s;
+            &.active {
+                color: #658493;
+                background-color:  #D1DFE7;
+            }
+        }
+        .sidebar--footer {
+            a {
+                display: block;
+                text-align: center;
+                padding: 12px;
+                text-transform: capitalize;
+            }
+        }
+    }
+    > .content {
+        padding:50px 100px;
+        background: #F1F1F1;
+        border-radius: 0px 21px 21px 0px;
+    }
+    .item-header {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        .updateTitles {cursor: pointer;}
+        > div {
+            display: flex;
+            gap: 10px;
+            a {
+                padding: 10px;
+            }
+        }
+    }
+}

@@ -53,6 +53,23 @@ document.querySelectorAll('[target-attr]').forEach(element => {
 })
 
 // create a function show and hide elemets 
+document.querySelectorAll('.updateTitles').forEach(element => {
+    element.addEventListener('click', (e) => {
+    if (element) {
+        console.log(element)
+        target = element.parentElement.parentElement.parentElement.querySelector('input.readonly')
+    }
+    let selector = document.querySelector(`#${e.target.getAttribute('target-attr')}`)
+    if (target) {
+        if (target.getAttribute('readonly')) {
+            target.removeAttribute('readonly')
+        } else {
+            target.setAttribute('readonly','readonly')
+        }
+    }})
+})
+
+// create a function show and hide elemets 
 document.querySelectorAll('[toggle-faq]').forEach(element => {
     element.addEventListener('click', (e) => {
         let selector = element.parentElement.querySelector('.body')
@@ -64,13 +81,18 @@ document.querySelectorAll('[toggle-faq]').forEach(element => {
 if (document.querySelector('.profile--container')) {
     let container = document.querySelector('.profile--container')
     let btns = container.querySelectorAll('.sidebar li')
-    let contents = container.querySelectorAll('.content div')
+    let contents = container.querySelectorAll('.content > div')
     btns.forEach( (a)=>{
         a.addEventListener('click', (t) => {
             contents.forEach( (e)=>{
+                console.log(e)
                 e.style.display = "none"
             })
+            btns.forEach( (e)=>{
+                e.classList.remove('active')
+            })
             document.querySelector(`.content #${a.getAttribute('value')}`).style.display = "block"
+            document.querySelector(`.sidebar [value=${a.getAttribute('value')}]`).classList.add('active')
         })
     })
 }

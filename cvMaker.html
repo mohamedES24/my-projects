@@ -24,47 +24,100 @@
             <a href="/" class="btn">login</a>
             <a href="/" class="btn primary">sign up</a>
         </div>
-    </header>
-    <section class="container top-cv">
-        <h2>Make My CV</h2>
-        <div>
-            <a href="#" class="btn success" > Upgrade to Premium </a>
-            <a href="#" class="btn outline-primary"> Save </a>
-            <a href="#" class="btn outline-primary"> Preview </a>
-        </div>
-    </section>
-    <section class="container">
-        <div class="profile--container">
-            <div class="sidebar">
-                <ul>
-                    <li value="Basic">Basic information</li>
-                    <li value="Work">Work experience</li>
-                    <li value="Qualifications">Qualifications</li>
-                    <li value="Education">Education</li>
-                    <li value="References">References</li>
-                    <li value="Interests">Interests</li>
-                </ul>
-                <div class="sidebar--footer">
-                    <a href="#">+ new section </a>
-                    <p class="small"> * Click and drag section names in the above list to reorder sections in your CV. </p>
-                    <p class="small"> * If you leave the fields in a section empty, the section will not appear in your CV </p>
+    </header>                    
+    <form action="#" class="pt-3">
+        <section class="container top-cv px-3">
+            <h2>Make My CV</h2>
+            <div>
+                <a href="#" class="btn success" > Upgrade to Premium <i class="fas fa-heart"></i> </a>
+                <button type="submit" class="btn outline-primary">
+                    <i class="fas fa-save"></i>
+                    Save
+                </button>
+                <a href="#" class="btn outline-primary"><i class="fas fa-file-signature"></i> Preview </a>
+            </div>
+        </section>
+        <section class="container">
+            <div class="profile--container">
+                <div class="sidebar">
+                    <ul>
+                        <li value="Basic" class="active">Basic information</li>
+                        <li value="Work">Work experience</li>
+                        <li value="Qualifications">Qualifications</li>
+                        <li value="Education">Education</li>
+                        <li value="References">References</li>
+                        <li value="Interests">Interests</li>
+                    </ul>
+                    <div class="sidebar--footer">
+                        <a href="#">+ new section </a>
+                        <p class="small"> * Click and drag section names in the above list to reorder sections in your CV. </p>
+                        <p class="small"> * If you leave the fields in a section empty, the section will not appear in your CV </p>
+                    </div>
+                </div>
+                <div class="content">
+                    <div id="Basic" >
+                        <div class="form50">
+                            <label>Full Name
+                                <input type="text" required="required"  placeholder="Enter your Full Name" />
+                            </label>
+                            <label>E-mail
+                                <input type="email" required="required"  placeholder="Enter your E-mail address" />
+                            </label>
+                        </div>
+                        <div class="form50">
+                            <label>Phone numbers
+                                <input type="text"  placeholder="Enter your Phone Number" />
+                                <span>If you have more than one URL, separate with commas </span>
+                            </label>
+                            <label>Websites
+                                <input type="text" name="website" />
+                                <span>If you have more than one URL, separate with commas </span>
+                            </label>
+                        </div>
+                        <br>
+                        <hr>
+                        <div class="form50 pt-3">
+                            <label>Address line 1
+                                <input type="text" name="AddressLineOne" value="" />
+                            </label>
+                            <label>Address line 1
+                                <input type="text" name="AddressLineTwo" value="" />
+                            </label>
+                        </div>
+                    </div>
+                    <div id="Work" style='display:none'>
+                        <div class="item-header">
+                            <input type="text" readonly="readonly" class="readonly" value="Work experience">
+                            <div>
+                                <label class="switch">
+                                    <input type="checkbox" checked="checked" />
+                                    <span class="slider round"></span>
+                                </label>
+                                <div>
+                                    <a class="updateTitles"><i class="far fa-edit" ></i></a>
+                                    <a class="deleteSection"><i class="far fa-trash-alt"></i></a>
+                                    <div style="display: none;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form50 pt-3">
+                            <label>Address line 1
+                                <input type="text" name="AddressLineOne" value="" />
+                            </label>
+                            <label>Address line 1
+                                <input type="text" name="AddressLineTwo" value="" />
+                            </label>
+                        </div>
+                        <textarea name="text_editor"></textarea>
+                    </div>
+                    <div id="Qualifications" style='display:none'>Qualifications</div>
+                    <div id="Education" style='display:none'>Education</div>
+                    <div id="References" style='display:none'>References</div>
+                    <div id="Interests" style='display:none'>Interests</div>
                 </div>
             </div>
-            <div class="content">
-
-                <div id="Basic" >Basic</div>
-                <div id="Work" style='display:none'>Work</div>
-                <div id="Qualifications" style='display:none'>Qualifications</div>
-                <div id="Education" style='display:none'>Education</div>
-                <div id="References" style='display:none'>References</div>
-                <div id="Interests" style='display:none'>Interests</div>
-
-            </div>
-        </div>
-    </section>
-    <section class="container">
-        <textarea name="text_editor"></textarea>
-    </section>
+        </section>
+    </form>
     <footer>
         <div class="container">
             <div class="flex-footer">
